@@ -1,6 +1,9 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title(":green[Give us your feedback] :pencil:")
+st.write("> Please fill the form below. **Your feedback is really important for us**.")
+form = st.button("Click here for the form")
+
+if form:
+    st.switch_page("pages/form.py")
+
