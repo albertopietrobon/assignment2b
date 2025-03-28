@@ -23,7 +23,10 @@ if submitted:
 
        else:
            st.write(f"**:green[Form summary:]**\n\n>*User:* {name}\n\n>*Satisfaction:* {rate}\n\n>*Comment:* No further comment")
-    
+           if rate<=2:
+               st.warning("We are really sorry you didn't like the experience :cry:")
+           if rate>=4:
+               st.success("We appreciated a lot your feedback! :smile:")
     else:
         st.warning("Missing name! :warning:")
 
